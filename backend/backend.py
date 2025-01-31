@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS # allows cross-origin requests alter
 from PIL import Image
 import numpy as np
 import io
@@ -7,7 +8,7 @@ import os
 from utils import preprocessing
 
 app = Flask(__name__)
-
+CORS(app) # allows cross-origin requests
 
 @app.route('/analyze', methods=['POST'])
 def analyze_image():
