@@ -70,9 +70,9 @@ def predict_dummy(image):
     """
     time.sleep(1)  # simulates AI processing
     if np.random.random() > 0.5:
-        return "Tumor Detected (Dummy)"
+        return "Tumor Detected "
     else:
-        return "No Tumor (Dummy)"
+        return "No Tumor Detected"
 
 
 if __name__ == '__main__':
