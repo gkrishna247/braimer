@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Services</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="animated-bg">
     <div class="bg-blob bg-blob1"></div>
     <div class="bg-blob bg-blob2"></div>
     <div class="bg-blob bg-blob3"></div>
     <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙/☀️</button>
-    <svg class="decorative-svg" style="bottom:-40px;left:-40px;width:160px;height:160px;" viewBox="0 0 160 160" aria-hidden="true"><circle fill="#ff6f61" fill-opacity="0.10" cx="80" cy="80" r="80"/></svg>
+    <svg class="decorative-svg decorative-svg-services" viewBox="0 0 160 160" aria-hidden="true"><circle fill="#ff6f61" fill-opacity="0.10" cx="80" cy="80" r="80"/></svg>
     <header class="main-header glass-card">
         <div class="header-content">
             <h1><span class="logo-icon" aria-label="logo">🧠</span> Brain Tumor Detection System</h1>
@@ -25,7 +30,7 @@
         </div>
     </header>
     <main>
-        <section class="services-section glass-card">
+        <section class="services-section glass-card" id="services">
             <h2>What We Offer</h2>
             <div class="features">
                 <div class="feature glass-card">
@@ -55,6 +60,5 @@
             </nav>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

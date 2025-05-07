@@ -2,16 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Login</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="animated-bg">
     <div class="bg-blob bg-blob1"></div>
     <div class="bg-blob bg-blob2"></div>
     <div class="bg-blob bg-blob3"></div>
     <button class="theme-switch" onclick="toggleTheme()" aria-label="Toggle dark/light mode">🌙/☀️</button>
-    <svg class="decorative-svg" style="bottom:0;right:0;width:120px;height:120px;" viewBox="0 0 120 120" aria-hidden="true"><circle fill="#2575fc" fill-opacity="0.10" cx="60" cy="60" r="60"/></svg>
+    <svg class="decorative-svg decorative-svg-login" viewBox="0 0 120 120" aria-hidden="true"><circle fill="#2575fc" fill-opacity="0.10" cx="60" cy="60" r="60"/></svg>
     <header class="main-header glass-card">
         <div class="header-content">
             <h1><span class="logo-icon" aria-label="logo">🧠</span> Brain Tumor Detection System</h1>
@@ -25,7 +30,7 @@
         </div>
     </header>
     <main>
-        <div class="container card glass-card" style="max-width:400px;margin:auto;">
+        <div class="container card glass-card" style="max-width:400px;margin:auto;" id="login">
             <h2 style="text-align:center;">Login</h2>
             <form onsubmit="event.preventDefault(); login();" aria-label="Login form" autocomplete="on">
                 <div class="form-group">
@@ -55,6 +60,5 @@
             </nav>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

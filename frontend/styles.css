@@ -9,6 +9,7 @@
     --card-bg: rgba(34, 46, 60, 0.85);
     --glass-bg: rgba(34, 46, 60, 0.55);
     --glass-border: rgba(0, 191, 255, 0.18);
+    --font-family: 'Roboto', Arial, sans-serif;
 }
 
 :root.light-theme {
@@ -29,7 +30,7 @@ body.theme-toggle {
 
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
@@ -351,6 +352,43 @@ body.animated-bg.light-theme {
     position: absolute;
     z-index: 0;
     pointer-events: none;
+}
+
+.decorative-svg-home {
+    top: -40px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+}
+.decorative-svg-about {
+    top: -60px;
+    right: -60px;
+    width: 180px;
+    height: 180px;
+}
+.decorative-svg-contact {
+    top: 0;
+    right: 0;
+    width: 140px;
+    height: 140px;
+}
+.decorative-svg-dashboard {
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+.decorative-svg-login {
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+}
+.decorative-svg-services {
+    bottom: -40px;
+    left: -40px;
+    width: 160px;
+    height: 160px;
 }
 
 /* Team Section Cards */
