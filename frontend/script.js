@@ -13,7 +13,7 @@ function login() {
         alert('Please enter both email and password.');
         return;
     }
-    fetch('http://127.0.0.1:5000/login', {
+    fetch('https://testflaskapp-324856786088.asia-south1.run.app/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             function processImage(file) {
                 const formData = new FormData();
                 formData.append('image', file);
-                fetch('http://127.0.0.1:5000/analyze', {
+                fetch('https://testflaskapp-324856786088.asia-south1.run.app/analyze', {
                     method: 'POST',
                     body: formData
                 })
