@@ -249,6 +249,7 @@ form button:hover {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
+    z-index: 1;
 }
 
 .feature {
@@ -257,57 +258,44 @@ form button:hover {
     padding: 20px;
     background-color: var(--card-bg);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s, background 0.3s, color 0.3s;
     color: var(--text-color);
-}
-
-.feature:hover {
-    transform: translateY(-10px);
+    border: 1px solid var(--glass-border);
 }
 
 .feature img {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
-.feature h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    padding-bottom: 0.3em;
-}
-
-.feature h2::after {
-    content: '';
-    display: block;
-    width: 60%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-    border-radius: 2px;
-    margin: 0.5em auto 0 auto;
+.feature h3, .feature h2 {
+    color: var(--text-color) !important;
 }
 
 .feature p {
-    font-size: 1rem;
-    color: var(--text-color);
+    color: var(--text-color) !important;
 }
 
-.feature-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1rem;
-    display: inline-block;
+.features .feature {
+    background: var(--glass-bg) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--glass-border) !important;
+}
+
+body.light-theme .features .feature {
+    background: var(--glass-bg);
+    color: var(--text-color);
+    border: 1px solid var(--glass-border);
 }
 
 /* Animated Gradient Background */
 body.animated-bg {
     position: relative;
-    overflow: hidden;
-    background: var(--background-color);
+    background: var(--background-color) !important;
     transition: background 0.3s;
 }
 
@@ -351,10 +339,6 @@ body.animated-bg.light-theme {
     background: var(--background-color);
 }
 
-body.animated-bg {
-    /* fallback for animated gradient if needed */
-    /* background: linear-gradient(270deg, #232946, #00bfff, #ff6f61, #6a11cb, #2575fc); */
-}
 
 @keyframes gradientMove {
     0% {background-position: 0% 50%;}
