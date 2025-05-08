@@ -13,7 +13,7 @@ function login() {
         alert('Please enter both email and password.');
         return;
     }
-    fetch('https://34.47.150.153:5000/login', {
+    fetch('https://34.47.150.153/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             function processImage(file) {
                 const formData = new FormData();
                 formData.append('image', file);
-                fetch('https://34.47.150.153:5000/analyze', {
+                fetch('https://34.47.150.153/analyze', {
                     method: 'POST',
                     body: formData
                 })
