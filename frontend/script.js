@@ -6,7 +6,7 @@ function $(id) {
 }
 
 // Configuration (Consider moving to a separate config file or environment variables for production)
-const API_BASE_URL = 'https://34.47.150.153'; // Use '' for relative paths (same origin), or e.g., 'https://your-api-domain.com'
+const API_BASE_URL = 'https://35.200.183.83'; // Use '' for relative paths (same origin), or e.g., 'https://your-api-domain.com'
 
 // Login Function
 function login() {
