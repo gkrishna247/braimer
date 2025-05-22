@@ -1,12 +1,34 @@
-# 🧠 Braimer
+<h1 align="center">🧠 Braimer</h1>
+<p align="center">
+  <b>AI-Powered Brain Tumor Detection System</b><br>
+  <i>Fast, accurate, and user-friendly MRI analysis for medical professionals and researchers.</i>
+</p>
 
-This repository contains the code for a brain tumor detection project. The project utilizes a Flask-based backend for processing images and a frontend interface for user interaction.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.7%2B-blue?logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Flask-Backend-green?logo=flask" alt="Flask">
+  <img src="https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-orange?logo=html5" alt="Frontend">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey?logo=open-source-initiative" alt="License">
+</p>
+
+---
+
+## ✨ Features
+
+- <b>Accurate Detection</b>: Deep learning for reliable brain tumor identification
+- <b>Real-Time Analysis</b>: Instant results via a modern web interface
+- <b>No Installation</b>: Just open the frontend in your browser
+- <b>Organized Datasets</b>: Easy-to-use train/test data folders
+- <b>Extensible</b>: Ready for research, clinical, or educational use
+
+---
 
 ## 📁 Project Structure
 
-This is the project's directory structure. Note that it differs from previous conversations, please look out for discrepancies:
+<details>
+<summary>Click to expand</summary>
 
-```
+```text
 brain-tumor-detection/
 ├── backend/            # Backend code (Python/Flask)
 │   ├── backend.py      # Flask server application
@@ -33,65 +55,65 @@ brain-tumor-detection/
 │
 └── requirements_dev.txt # Requirements to run dev tools
 ```
+</details>
 
-### Key Structure Points:
+### Key Structure Points
+- <b>Backend</b>: Flask server, ML model, and utilities
+- <b>Frontend</b>: HTML/CSS/JS for user interaction
+- <b>Data</b>: Separate folders for training and testing
 
-* **Backend**: Contains the server, model, utility functions, and a list of required dependencies (`requirements.txt`). You need this before starting your server.
-* **Frontend**: Handles user interaction using HTML, JavaScript, CSS, and UI assets.
-* **Data**: Separates datasets into train and test, making it more user-friendly and avoiding the hassle of using a single directory during testing/training.
+---
 
 ## 🚀 Getting Started
 
-### Prerequisites:
-Before running, please ensure:
+### Prerequisites
+- Python 3.7 or higher
+- Git
 
-* You have Python 3.7 or higher installed and added to the system path.
-* You have Git installed.
-
-### Instructions:
-Follow the steps below to set up the development environment:
-
-1. **Clone the Repository:**
-
-    ```bash
+### Backend Setup
+1. Clone the repository:
+    ```sh
     git clone https://github.com/gkrishna247/braimer.git
     cd braimer
     ```
+2. Set up the backend:
+    ```sh
+    cd backend
+    pip install -r requirements.txt
+    ```
+3. (Optional) Set environment variables as needed.
+4. Start the Flask server:
+    ```sh
+    python backend.py
+    ```
+    The server runs at <a href="http://127.0.0.1:5000/" target="_blank">http://127.0.0.1:5000/</a> by default.
 
-2. **Set up the backend:**
+### Frontend Setup
+- No installation required. Open <code>frontend/index.html</code> in your browser.
+- Ensure the backend server is running for predictions.
 
-    * Navigate to the backend directory:
+---
 
-        ```bash
-        cd backend
-        ```
+## 🖼️ Usage
 
-    * Install Python dependencies:
+1. Open the web interface (<code>frontend/index.html</code>).
+2. Upload an MRI image.
+3. Click <b>Analyze</b>. The result will be displayed after processing.
 
-        ```bash
-        pip install -r requirements.txt
-        ```
-
-    * Ensure environment variables are set if needed.
-
-3. **Start the Flask server:**
-
-    * From inside the `backend` directory, run:
-
-        ```bash
-        python backend.py
-        ```
-
-    **Note**: By default, the server starts at http://127.0.0.1:5000/. If another port is needed, change the port during the run.
-
-4. **Set up the frontend:**
-
-    * No installation required. Use a browser to load `index.html`. Ensure the server is running to load from the endpoint `/analyze` during image prediction.
+---
 
 ## 🤝 Contribution
 
-We encourage you to contribute. Before making any large changes to the project, create an issue.
+We encourage you to contribute! Please open an issue before making large changes.
+
+---
 
 ## 📧 Contact
 
-Feel free to contact us at [gkrishna247@gmail.com](mailto:gkrishna247@gmail.com).
+For questions or support, email: <a href="mailto:krishnamoorthitech2224@gmail.com@gmail.com">krishnamoorthitech2224@gmail.com</a>
+
+---
+
+## 📄 License
+
+This project is licensed under the terms of the <code>LICENSE</code> file in this repository.
